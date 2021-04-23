@@ -65,7 +65,7 @@ ul {
   color: white;
   background: radial-gradient(circle, rgba(255,67,86,1) 41%, rgba(255,143,112,1) 100%);
   padding: 70px 40px;
-  border-radius: 0 0 0 80px;
+  border-radius: 0 0 0 150px;
 }
 
 .cabecalho h1 {
@@ -93,6 +93,23 @@ ul {
   padding-top: 100px;
   color: hsl(208, 49%, 24%);
   text-align: center;
+}
+
+.telefone{
+  transform: translateY(200px);
+  margin-top: -200px;
+}
+
+.artigo2 {
+  padding-top: 100px;
+  background: radial-gradient(circle, rgba(63,65,100,1) 27%, rgba(44,45,63,1) 99%);
+  color: white;
+  border-radius: 0 30%;
+}
+
+
+.artigo2 h1 {
+  color: white;
 }
 
 .logo {
@@ -134,4 +151,24 @@ ul {
     order: 1;
   }
 
+  .container-dois {
+    display: flex;
+    width: 100%;
+    background: radial-gradient(circle, rgba(63,65,100,1) 27%, rgba(44,45,63,1) 99%);
+    border-radius: 0 150px;
+  }
+
+  .telefone {
+    transform: translateY(0);
+  }
+
+  .segunda-imagem {
+    width: 50%;
+    
+  }
+  
+  .artigo2 {
+    width: 50%;
+    background:transparent;
+  }
 }
