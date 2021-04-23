@@ -5,6 +5,7 @@
   margin: 0;
   border: 0;
   font-family: Overpass, sans-serif;
+  
 }
 
 body {
@@ -22,6 +23,10 @@ h1 {
   padding-bottom: 30px;
 }
 
+div {
+  overflow: hidden;
+}
+
 article {
   color: hsl(207, 13%, 34%);
   text-align: center;
@@ -30,6 +35,7 @@ article {
 
 article h1 {
   color: hsl(208, 49%, 24%);
+  padding-top: 50px;
 }
 
 p {
@@ -83,6 +89,12 @@ ul {
   font-weight: 600;
 }
 
+.titulo-principal {
+  padding-top: 100px;
+  color: hsl(208, 49%, 24%);
+  text-align: center;
+}
+
 .logo {
   position: absolute;
   width: 100px;
@@ -99,4 +111,27 @@ ul {
 
 .nav-footer {
   padding: 70px;
+}
+
+@media (min-width: 900px) {
+  .container-um {
+    display: flex;
+    width: 100%;
+  }
+  .artigo1 {
+    width: 50%;
+    text-align: left;
+    padding-left: 200px;
+  }
+
+  .illustrator {
+    width: 150%;
+    transform: translateY(-100px);
+  }
+
+  .primeira-imagem {
+    width: 50%;
+    order: 1;
+  }
+
 }
