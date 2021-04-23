@@ -113,7 +113,6 @@ ul {
 }
 
 .logo {
-  position: absolute;
   width: 100px;
 }
 
@@ -123,7 +122,7 @@ ul {
   justify-content: center;
   background-color: hsl(240, 10%, 16%);
   color: hsl(240, 2%, 79%);
-  border-radius: 0% 20% 0% 0%;
+  border-radius: 0 150px 0 0;
 }
 
 .nav-footer {
@@ -195,6 +194,24 @@ ul {
   .laptop {
     width: 150%;
     transform: translateX(-260px);
+  }
+
+  .rodape {
+    width: 100%;
+    display: flex;
+  }
+
+  .nav-footer {
+    width: 100%;
+    display: flex;
+  }
+
+  .rodape div {
+    padding: 30px 100px;
+  }
+
+  .logo {
+    padding: 0;
   }
 
 }
