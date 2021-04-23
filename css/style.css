@@ -156,6 +156,7 @@ ul {
     width: 100%;
     background: radial-gradient(circle, rgba(63,65,100,1) 27%, rgba(44,45,63,1) 99%);
     border-radius: 0 150px;
+    padding-bottom: -10px;
   }
 
   .telefone {
@@ -164,11 +165,36 @@ ul {
 
   .segunda-imagem {
     width: 50%;
-    
+    margin-bottom: -50px;
+    margin-top: -50px;
+    transform: translateY(150px);
   }
-  
+
   .artigo2 {
+    text-align: left;
     width: 50%;
     background:transparent;
   }
+
+  .container-tres {
+    padding-top: 150px;
+    display: flex;
+    width: 100%;
+  }
+
+  .artigo3 {
+    padding-top: 180px;
+    width: 50%;
+    text-align: left;
+  }
+
+  .terceira-imagem {
+    width: 50%;
+  }
+
+  .laptop {
+    width: 150%;
+    transform: translateX(-260px);
+  }
+
 }
