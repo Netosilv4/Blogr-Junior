@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: Overpass, sans-serif;
+}
+
+body {
+  width: 100%;
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1 {
+  padding-bottom: 30px;
+}
+
+article {
+  color: hsl(207, 13%, 34%);
+  text-align: center;
+  padding: 50px;
+}
+
+article h1 {
+  color: hsl(208, 49%, 24%);
+}
+
+p {
+  padding-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+.logo-cabecalho {
+  position: absolute;
+  width: 100px;
+  transform: translateX(25px);
+}
+
+.cabecalho ul {
+  display: none;
+}
+
+.cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: radial-gradient(circle, rgba(255,67,86,1) 41%, rgba(255,143,112,1) 100%);
+  padding: 70px 40px;
+  border-radius: 0 0 0 80px;
+}
+
+.cabecalho h1 {
+  padding-top: 80px;
+}
+
+.cabecalho button {
+  padding: 15px;
+  border-radius: 40px;
+}
+
+.botao-um {
+  color: hsl(356, 100%, 66%);
+  font-weight: 600;
+}
+
+.botao-dois {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-weight: 600;
+}
+
+.logo {
+  position: absolute;
+  width: 100px;
+}
+
+.rodape {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(240, 10%, 16%);
+  color: hsl(240, 2%, 79%);
+  border-radius: 0% 20% 0% 0%;
+}
+
+.nav-footer {
+  padding: 70px;
+}
