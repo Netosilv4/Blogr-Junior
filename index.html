@@ -10,42 +10,51 @@
   <title>Frontend Mentor | [Blogr]</title>
 </head>
 <body>
-  <img class="logo-cabecalho" src="/images/logo.svg" alt="Logo">
   <header class="cabecalho">
-  <nav>
-      <ul class="navMenu">
-          <li><a>Product</a></li>
-        <ul>
-          <li>Overview</li>
-          <li>Pricing</li>
-          <li>Marketplace</li>
-          <li>Features</li>
-          <li>Integrations</li>
-        </ul>
-          <li><a>Company</a></li>
-
-        <ul>
-          <li>About</li>
-          <li>Team</li>
-          <li>Blog</li>
-          <li>Careers</li>
-        </ul>
-
-          <li><a>Connect</a></li>
-
-        <ul>
-          <li>Contact</li>
-          <li>Newsletter</li>
-          <li>LinkedIn</li>
-        </ul>
-        
-          <li>Login</li>
-          <li>Sign Up</li>
+    <picture class="logo-cabecalho">
+     <img class src="/images/logo.svg" alt="Logo">
+    </picture>
+      <nav class="nav">
+      <ul class="navList">
+        <div class="dropdown">
+        <li>Products <img class="icon" src="/images/icon-arrow-light.svg"></li>
+        <div class="dropdownContent">
+        <a>Overview</a>
+        <a>Pricing</a>
+        <a>Marketplace</a>
+        <a>Features</a>
+        <a>Integrations</a>
+        </div>
+        </div>
+        <div class="dropdown">
+        <li>Company<img class="icon" src="/images/icon-arrow-light.svg"></li>
+        <div class="dropdownContent">
+        <a>About</a>
+        <a>Team</a>
+        <a>Blog</a>
+        <a>Careers</a>
+        </div>
+        </div>
+        <div class="dropdown">
+        <li onclick="dale()">Connect<img class="icon" src="/images/icon-arrow-light.svg"></li>
+        <div class="dropdownContent">
+          <a>Contact</a>
+          <a>Newsletter</a>
+          <a>Linkedin</a>
+        </div>
+        </div>
+      </ul>
+      </div>
     </ul>
-    </nav>
   
-
-
+    <div class="login-sign">
+      <button class="login">Login</button>
+      <button class="sign-up">Sign Up</button>
+    </div>
+    </nav>
+  <picture class="menu-hamburguer">
+    <img src="/images/icon-hamburger.svg" alt="" width="100px">
+  </picture>
   <h1>A modern publishing platform</h1>
   <p>Grow your audience and build your online brand</p>
 
@@ -56,7 +65,7 @@
 
 </header>
   <div>
-  <h1 class="titulo-principal"> Designed for The Future</h1>
+  <h1 class="titulo-principal">Designed for The Future</h1>
 
   <container class="container-um">
     <picture class="primeira-imagem">
@@ -128,13 +137,13 @@
   <div  class="product">
   <ul>
 
-  <li>Product</li><br>
+  <li><p>Product</p></li>
 
   <li>Overview</li>
   <li>Pricing</li>
   <li>Marketplace</li>
   <li>Features</li>
-  <li>Integrations</li>
+  <li>Integrations</li><br>
 
   </ul>
 </div>
@@ -142,7 +151,7 @@
 <div class="company">
   <ul>
 
-  <li>Company</li><br>
+  <li><p>Company</p></li>
 
   <li>About</li>
   <li>Team</li>
@@ -154,7 +163,7 @@
 <div class="connect">
   <ul>
 
-  <li>Connect</li><br>
+  <li><p>Connect</p></li>
   
   <li>Contact</li>
   <li>Newsletter</li>
@@ -164,6 +173,6 @@
 </div>
 </nav>
 </footer>
-
+<script src="/javascript/js.js"></script>
 </body>
 </html>

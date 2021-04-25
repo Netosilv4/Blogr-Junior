@@ -8,6 +8,7 @@
   
 }
 
+
 body {
   width: 100%;
   font-size: 16px;
@@ -44,27 +45,126 @@ p {
 
 ul {
   list-style: none;
+
 }
 
-.logo-cabecalho {
-  position: absolute;
-  width: 100px;
-  transform: translateX(25px);
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.cabecalho ul {
+
+.icon {
   display: none;
+}
+
+.menu-hamburguer:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+
+  .logo-cabecalho {
+    position: absolute;
+    width: 100px;
+    margin-top: 30px;
+  }
+  .menu-hamburguer {
+    width: 30px;
+    display: flex;
+    position: relative;
+    left: 90%;
+    margin-top: 40px;
+  }
+  
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    background-color: white;
+    color: black;
+    height: 400px;
+    width: 80%;
+    top: 10%;
+    line-height: 30px;
+    text-align: center;
+    box-shadow: 1px 1px 10px black;
+    padding-top: 15px;
+    border-radius: 15px;
+}
+
+  .login-sign {
+    display: flex;
+    flex-direction: column;
+    }
+
+  .sign-up {
+    margin: 0 auto;
+    width: 150px;
+    background: radial-gradient(circle, rgba(255,67,86,1) 41%, rgba(255,143,112,1) 100%);
+    color: white;
+    }
+
+  .login {
+    width: 150px;
+    color: black;
+    margin: 0 auto;
+    }
+
+  .dropdownContent{
+    display: none;
+    padding: 5px;
+    font-weight: 300;
+    margin: 15px;
+    }
+  
+  .dropdownContent-click{
+    display: block;
+    background-color: lightgray;
+    border-radius: 15px;
+  }
+  
+  .dropdownContent a{
+    display: block;
+    padding: 0;
+    font-weight: 300;
+    line-height: 40px;
+  }
+  
+}
+
+.dropdownContent a:hover {
+  font-weight: 600;
+  cursor:pointer;
+}
+
+.login {
+  background-color: transparent;
+  font-weight: 600;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.sign-up {
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+
+.sign-up:hover {
+  background-color: hsl(355, 100%, 74%);
+  cursor: pointer;
+  color: white;
 }
 
 .cabecalho {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
   color: white;
   background: radial-gradient(circle, rgba(255,67,86,1) 41%, rgba(255,143,112,1) 100%);
-  padding: 70px 40px;
+  padding: 10px 40px 150px 50px;
   border-radius: 0 0 0 150px;
 }
 
@@ -72,9 +172,10 @@ ul {
   padding-top: 80px;
 }
 
-.cabecalho button {
-  padding: 15px;
+.buttons button {
+  padding: 10px 30px 10px 30px;
   border-radius: 40px;
+  margin: 10px;
 }
 
 .botao-um {
@@ -82,11 +183,23 @@ ul {
   font-weight: 600;
 }
 
+.botao-um:hover {
+  color: white;
+  background-color: hsl(355, 100%, 74%);
+  cursor: pointer;
+}
+
 .botao-dois {
   background-color: transparent;
   border: 1px solid white;
   color: white;
   font-weight: 600;
+}
+
+.botao-dois:hover {
+  background-color: white;
+  color: hsl(355, 100%, 74%);
+  cursor:pointer;
 }
 
 .titulo-principal {
@@ -125,11 +238,119 @@ ul {
   border-radius: 0 150px 0 0;
 }
 
+.rodape p {
+  color: white;
+  font-weight: 600;
+}
+
+
 .nav-footer {
   padding: 70px;
 }
 
 @media (min-width: 900px) {
+  .icon {
+    display: block;
+    width: 10%;
+    padding: .5em;
+    line-height: 1.22;
+    float:right;
+  }
+
+  .cabecalho {
+    display: flex;
+  }
+  .cabecalho .menu-hamburguer {
+    display: none;
+  }
+
+  .logo-cabecalho {
+    width: 10%;
+    display: flex;
+    position:absolute;
+  }
+
+  .nav {
+    width: 75%;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-left: 20%;
+    padding-top: 20px;
+  }
+
+  .navList li {
+    display: inline-block;
+    padding: 15px;
+  }
+ 
+  .dropdown {
+    display: inline-block;
+    
+  }
+  
+  .dropdown:hover {
+    cursor: pointer;
+  }
+
+  .dropdownContent a{
+    display: block;
+    padding: 0;
+    font-weight: 300;
+  }
+
+
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdownContent {
+    display: block;
+    color: black;
+    padding: 10px 20px;
+    line-height: 35px;
+    border-radius: 15px;
+    text-align: left;
+  }
+
+  .login-sign {
+    display: flex;
+    background-color: transparent;
+    padding-top: 5px;
+    align-self: center;
+    align-items: flex-start;
+    }
+  
+  .login {
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    padding-right: 40px;
+    padding-top: 10px;
+  }
+  
+  .sign-up {
+    background-color: white;
+    color: hsl(356, 100%, 66%);
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px 30px;
+  }
+  
+  .sign-up:hover {
+    background-color: hsl(355, 100%, 74%);
+    cursor: pointer;
+    color: white;
+  }
+
+
   .container-um {
     display: flex;
     width: 100%;
@@ -199,10 +420,11 @@ ul {
   .rodape {
     width: 100%;
     display: flex;
+    line-height: 30px;
   }
 
   .nav-footer {
-    width: 100%;
+    width: 80%;
     display: flex;
   }
 
