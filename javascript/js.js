@@ -7,10 +7,11 @@ hamburguer.addEventListener('click', function(){
     if(nav.style.display === ''){
         nav.style.display = 'flex';
         hamburguer.children[0].src = '/images/icon-close.svg'
+        document.body.style.overflowY = 'hidden'
     }else {
         nav.style.display = '';
         hamburguer.children[0].src = '/images/icon-hamburger.svg'
-
+        document.body.style.overflowY = 'scroll'
     }
 })
 
