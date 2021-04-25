@@ -26,8 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot/desktopPreview.png)
-
+![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.png)
 
 ### Links
 
