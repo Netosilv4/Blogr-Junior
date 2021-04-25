@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot/desktopPreview.jpg)
+![](./screenshot/desktopPreview.png)
 
 
 ### Links
@@ -53,6 +53,6 @@ Users should be able to:
 ## Author
 
 - Website - [Neto Silva](https://netosilv4.github.io/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [Netosilv4](https://www.frontendmentor.io/profile/Netosilv4)
 
 
