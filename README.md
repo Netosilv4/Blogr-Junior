@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:(https://github.com/Netosilv4/FrontEndMentor-Blogr-Junior)
+- Solution URL:(https://github.com/Netosilv4/Blogr-Junior)
 
 ## My process
 
