@@ -1,6 +1,3 @@
-# Frontend Mentor - Blogr landing page solution
-
-This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -13,8 +10,6 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -26,7 +21,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Design preview for the Blogr landing page coding challenge](./design/desktop-preview.png)
+![Design preview for the Blogr landing page coding challenge](./blogrPrint.png)
 
 ### Links
 

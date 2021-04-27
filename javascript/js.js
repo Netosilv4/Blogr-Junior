@@ -6,11 +6,11 @@ hamburguer.addEventListener('click', function(){
     let nav = document.querySelector('.nav')
     if(nav.style.display === ''){
         nav.style.display = 'flex';
-        hamburguer.children[0].src = './images/icon-close.svg'
+        hamburguer.children[0].src = '../images/icon-close.svg'
         document.body.style.overflowY = 'hidden'
     }else {
         nav.style.display = '';
-        hamburguer.children[0].src = './images/icon-hamburger.svg'
+        hamburguer.children[0].src = '../images/icon-hamburger.svg'
         document.body.style.overflowY = 'scroll'
     }
 })
@@ -31,8 +31,8 @@ for(const divs of dropdown){
 for(const list of dropdown) {
     list.addEventListener('mouseover', function(){
         console.log(list.firstElementChild.firstElementChild.src)
-        if(list.firstElementChild.firstElementChild.getAttribute('src') == "/images/icon-arrow-light.svg"){
-            list.firstElementChild.firstElementChild.src = "./images/icon-arrow-dark.svg"
+        if(list.firstElementChild.firstElementChild.getAttribute('src') == "../images/icon-arrow-light.svg"){
+            list.firstElementChild.firstElementChild.src = "../images/icon-arrow-dark.svg"
             list.firstElementChild.firstElementChild.style = 'transform: rotate(180deg);'
         }
     })
@@ -41,8 +41,8 @@ for(const list of dropdown) {
 for(const list of dropdown) {
     list.addEventListener('mouseout', function(){
         console.log(list.firstElementChild.firstElementChild.src)
-        if(list.firstElementChild.firstElementChild.getAttribute('src') == "/images/icon-arrow-dark.svg"){
-            list.firstElementChild.firstElementChild.src = "/images/icon-arrow-light.svg"
+        if(list.firstElementChild.firstElementChild.getAttribute('src') == "../images/icon-arrow-dark.svg"){
+            list.firstElementChild.firstElementChild.src = "../images/icon-arrow-light.svg"
             list.firstElementChild.firstElementChild.style = 'transform: rotate(0deg);'
 
         }
